@@ -16,7 +16,7 @@ def temp_check(temperature):
   if temperature > 102 or temperature < 95:
     Print_Output('Temperature critical!')
     return False
-   return True 
+  return True 
 
 def pulse_check(pulseRate):
   if pulseRate < 60 or pulseRate > 100:
@@ -31,7 +31,7 @@ def spo2_check(spo2):
   return True 
 
 def vitals_ok(temperature, pulseRate, spo2):
-  if temp_check(temperature) and pulse_check(pulseRate) and spo2_check(spo2):
+  if (temp_check(temperature) and pulse_check(pulseRate) and spo2_check(spo2)):
     return True
   return False
 #vitals_ok(110,50,80)
