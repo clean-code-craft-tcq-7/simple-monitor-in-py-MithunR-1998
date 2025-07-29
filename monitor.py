@@ -16,7 +16,7 @@ def temp_check(temperature):
   if temperature > 102 or temperature < 95:
     Print_Output('Temperature critical!')
 
-def pulse_check(pulserate):
+def pulse_check(pulseRate):
   if pulseRate < 60 or pulseRate > 100:
     Print_Output('Pulse Rate is out of range!')
 
