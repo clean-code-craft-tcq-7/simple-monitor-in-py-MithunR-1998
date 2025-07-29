@@ -31,7 +31,5 @@ def spo2_check(spo2):
   return True 
 
 def vitals_ok(temperature, pulseRate, spo2):
-  if (temp_check(temperature) and pulse_check(pulseRate) and spo2_check(spo2)):
-    return True
-  return False
-#vitals_ok(110,50,80)
+  return temp_check(temperature) and pulse_check(pulseRate) and spo2_check(spo2)
+  
